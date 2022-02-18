@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When do use Javascript const</title>
+</head>
+
+<body>
+
+    <div>
+
+        <img src="https://images.indulgexpress.com/uploads/user/imagelibrary/2021/12/15/original/AppleMacBookPro14.jpg?w=400&dpr=2.6"
+            alt="" width="20%">
+
+        <p id="laptop"></p>
+    </div>
+
+    <div>
+        <img src="https://cdn.pocket-lint.com/r/s/970x/assets/images/158444-phones-review-apple-iphone-13-review-images-image1-clh15n2ocg.jpg" alt="" width="20%">
+        <p id="phone"></p>
+    </div>
+
+    <button id="buy_together" type="button" onclick="totalF()">Buy together</button>
+    <p id="total"></p>
+
+    <p id="total_description"></p>
+
+    <script>
+        const laptopPrice = 1000;
+        const iPhonePrice = 500;
+        let total = laptopPrice + iPhonePrice;
+
+        document.getElementById('laptop').innerHTML = laptopPrice + "$";
+        document.getElementById('phone').innerHTML = iPhonePrice + "$";
+
+        function totalF(){
+            document.getElementById('buy_together').style.display = 'none';
+            document.getElementById('total_description').innerHTML = 'Your total is:'+total+'$';
+            
+
+
+
+        }
+
+        
+
+
+
+    </script>
+
+</body>
+
+</html>
